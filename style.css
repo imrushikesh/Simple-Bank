@@ -1,0 +1,203 @@
+/*
+Name: Basic Banking System.
+Author: Rushikesh Patil
+Author URI: https://www.github.com/imrushikesh
+Description: Basic Banking System using html,css,php and mysql.
+
+*/
+
+.MainDiv {
+    background-image: url("bankbg.png");
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.MainDiv>img {
+    width: 100%;
+}
+
+.ViewButton {
+    padding-right: 66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 24px;
+}
+
+.Button {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Button a {
+    left: 50%;
+    text-decoration: none;
+    border: 2px dashed #509bff;
+    padding: 10px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+span {
+    position: relative;
+    z-index: 3;
+}
+
+.Button a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    height: calc(100% - 10px);
+    background-color: #efefef;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+
+.Button a:hover::before {
+    transform: scaleY(0);
+}
+
+.Button a::after {
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+    background-color: #efefef;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+}
+
+.Button a:hover::after {
+    transform: scaleX(0);
+}
+
+.Cust {
+    padding-top: 22%;
+    padding-left: 10%;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+table,
+tbody {
+    background-color: lightgray;
+    width: 70%;
+    height: 70px;
+    text-align: center;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+th,
+td {
+    border: 5px solid rgb(1, 19, 43)
+}
+
+.selectbtn {
+    text-align: center;
+}
+
+.selectbtn {
+    color: white;
+    border-radius: 20px;
+    background-color: #4669dd;
+    width: auto;
+}
+
+.selectbtn:hover {
+    color: black;
+    background-color: white;
+}
+
+.Transtext {
+    padding-left: 35%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+label {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.form-control {
+    background-color: lightskyblue;
+    border-radius: 20px;
+}
+
+.slabel {
+    padding-top: 2%;
+    padding-left: 10%;
+}
+
+.tbtn {
+    padding-top: 2%;
+    padding-left: 30%;
+}
+
+.selectbtn2 {
+    height: 40px;
+    width: 12%;
+}
+
+.Transations {
+    padding-top: 2%;
+    padding-left: 45%;
+    padding-bottom: 2%;
+}
+
+.selectbtn3 {
+    height: 40px;
+    width: 15%;
+}
+
+.trtable {
+    padding-left: 25%;
+}
+
+.Maindiv {
+    background-image: linear-gradient(to top, #ffffff, #e2e2fe, #bdc8fe, #8cb0ff, #379bff);
+}
+
+.AuthorClass {
+    display: flex;
+    flex-direction: column;
+    top: 86%;
+    left: 28%;
+}
+
+.Author {
+    font-weight: bolder;
+    font-size: 12px;
+    font-family: 'Petit Formal Script', cursive;
+    color: black;
+}
+
+.Network {
+    display: flex;
+    flex-direction: row;
+}
+
+.Network>a>img {
+    width: 50px;
+    height: 50px;
+}
